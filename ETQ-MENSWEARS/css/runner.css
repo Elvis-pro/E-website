@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Graphik, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+.div1 {
+    align-items: center;
+}
+
+.whole-nav .first-nav {
+    padding: 1rem, 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    z-index: inherit;
+}
+
+.whole-nav .first-nav div h2 {
+    color: black;
+}
+
+.first-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.first-nav ul li {
+    list-style: none;
+    margin-right: 1.5rem;
+    padding-top: 0.6rem;
+    user-select: none;
+}
+
+.first-nav ul li:hover {
+    cursor: pointer;
+}
+
+.first-nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.fourth-nav div p a {
+    color: black;
+    text-decoration: none;
+}
+
+.fourth-nav div div h6 {
+    font-size: 0.9rem;
+}
+
+.fourth-nav div div p {
+    font-size: 0.8rem;
+}
+
+.fourth-nav div input {
+    width: 102.5%;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding-bottom: 2.5vh;
+    border-bottom: 1px solid #eaeaeaea;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.fourth-nav div input:focus {
+    outline: none;
+}
+
+.fifth-nav div div p a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.fifth-nav div div h6 {
+    font-size: 0.9rem;
+}
+
+.secound-nav {
+    background-color: white;
+    display: none;
+    position: fixed;
+    top: 15.6vh;
+    left: 1%;
+}
+
+.third-nav {
+    background-color: white;
+    position: fixed;
+    display: none;
+    top: 15.6vh;
+    left: 1%;
+}
+
+.third-nav .third-inner {
+    margin-top: 12vh;
+    padding-bottom: 9vh;
+}
+
+.fourth-nav {
+    background-color: white;
+    position: fixed;
+    top: 15.6vh;
+    left: 1%;
+    display: none;
+}
+
+.fifth-nav {
+    background-color: white;
+    display: none;
+    padding-bottom: 8vh;
+    position: fixed;
+    left: 1%;
+    top: 15.6vh;
+}
+
+.sixth-nav {
+    display: none;
+    padding-bottom: 5vh;
+    position: fixed;
+    right: 1%;
+    top: 5.6vh;
+    background-color: #fff;
+}
+
+div div .shoe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div div .shoe2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+}
+
+div div .shoe3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div div .shoe4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+}
+
+div div div .column:hover {
+    cursor: pointer;
+    border: 1px dotted black;
+}
+
+div div div .grid:hover {
+    cursor: pointer;
+    border: 1px dotted black;
+}
+
+div div .shoe3 .wardrome-essetials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+div div .shoe3 .wardrome-essetials .div2 {
+    margin-top: 80mm !important;
+}
+
+.mobile-view {
+    display: none !important;
+}
+
+.body2 .shoe5 {
+    display: none;
+}
+
+.body2 .shoe6 {
+    display: none;
+}
+
+.body2 .shoe7 {
+    display: none;
+}
+
+.body2 .shoe8 {
+    display: none;
+}
+
+.visibility {
+    display: block;
+}
+
+div div .fav1 .fv1 {
+    z-index: auto;
+    display: none;
+}
+
+
+.fav2 .fv2 {
+    z-index: auto;
+    display: none;
+}
+
+.fav3 .fv3 {
+    z-index: auto;
+    display: none;
+}
+
+
+.visible {
+    display: none !important;
+}
+
+.mobile-nav{
+    position: fixed;
+    width: 98%;
+    left: 1%;
+}
+
+/* ending of toggle */
+/*begining of media querry */
+
+@media screen and (min-width: 1023px) {
+    .shoe5{
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .div1 {
+        display: none;
+    }
+
+    .first-nav {
+        display: none;
+    }
+
+    .home-div {
+        display: none;
+    }
+
+    .home-div2 {
+        display: block;
+    }
+
+    .whole-nav {
+        display: none;
+    }
+
+    .recomadation {
+        display: none;
+    }
+
+    .favourite {
+        display: none;
+    }
+
+    .etq-wear {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .M-view {
+        display: block;
+    }
+
+    .m-favourite {
+        display: block;
+    }
+
+    .m-shades {
+        display: block;
+    }
+
+    .flush {
+        display: block;
+    }
+
+    .body{
+        display: none;
+    }
+    
+    .body div .shoe-types{
+        display: none;
+    }
+    .body .grid-coloums {
+        display: none;
+    }
+
+    .body .shoe {
+        display: none;
+    }
+
+    .body .shoe2 {
+        display: none;
+    }
+
+    .body .shoe3 {
+        display: none;
+    }
+
+    .body .shoe4 {
+        display: none;
+    }
+
+    .body2{
+        display: block !important;
+    }
+
+    .mobile-view {
+        display: block !important;
+    }
+
+    .body2 .shoe5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 185mm;
+    }
+
+    .body2 .shoe6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 180mm;
+    }
+
+    .body2 .shoe7 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 180mm;
+    }
+
+    .body2 .shoe8 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 180mm;
+    }
+
+}

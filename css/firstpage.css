@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Graphik, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.div1{
+    align-items: center;
+}
+.whole-nav .first-nav{
+    padding: 1rem, 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    z-index: inherit;
+}
+.first-nav ul{
+    display: flex;
+    align-items: center;
+}
+.first-nav ul li{
+    list-style: none;
+    margin-right: 1.5rem;
+    padding-top: 0.6rem;
+    user-select: none ;
+}
+.first-nav ul li:hover{
+    cursor: pointer;  
+}
+.first-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.fourth-nav div p a{
+    color: black;
+    text-decoration: none;
+}
+.fourth-nav div div h6{
+    font-size: 0.9rem;
+}
+.fourth-nav div div p{
+    font-size: 0.8rem;
+}
+.fourth-nav div input{
+    width: 102.5%; 
+    font-size: 1.5rem; 
+    font-weight: lighter; 
+    padding-bottom: 2.5vh; 
+    border-bottom: 1px solid #eaeaeaea;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.fourth-nav div input:focus{
+    outline: none;
+}
+.fifth-nav div div p a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+.fifth-nav div div h6{
+    font-size: 0.9rem;
+}
+.home-div{
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-gap: 25px;
+}
+.home-div .box1{
+    height: 180mm;
+    width: 40%;
+    background-color: black;
+    background-image: url(../images/Full_body_1080x.webp);
+    background-position: center;
+    background-size: cover;
+}
+.home-div .box2{
+    height: 180mm;
+}
+.home-div2{
+    background-image: url(../images/Full_body_1080x.webp);
+    background-position: center;
+    background-size: cover;
+    display: none;
+    margin-bottom: 5vh;
+}
+.mobile-nav{
+    position: fixed;
+    width: 98%;
+    left: 1%;
+}
+.recomadation .box{
+    display: flex;
+    justify-content: space-between;
+}
+.favourite{
+    width: 96%;
+    margin: auto;
+    position: relative;
+}
+
+.favourite .first-slide{
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.favourite .first-slide::-webkit-scrollbar {
+    display: none;
+}
+.favourite .first-slide {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.favourite .first-slide .item5{
+    /* background-color: lightblue; */
+    /* height: 95%; */
+    aspect-ratio: 1/2;
+}
+.favourite .first-slide .item2{
+    /* background-color: lightgreen; */
+    /* height: 95%; */
+    aspect-ratio: 2/1;
+}
+.favourite .first-slide .item5, .item2{
+    display: inline-block;
+    margin: 5px;
+    scroll-snap-align: center;
+}
+
+div div .fav1 .fv1{
+    z-index: auto; 
+    display: none;
+}
+.fav2 .fv2{
+    z-index: auto;
+    display: none;
+}
+.fav3 .fv3{
+    z-index: auto;
+    display: none;
+}
+.etq-wear{
+    width: 96%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 30px;
+    margin-bottom: 15vh;
+}
+.etq-wear .a1{
+    width: 100%;
+    height:110mm;
+    background: url(../images/Frame_421_750x.webp);
+    background-size: cover;
+    background-position: center;
+}
+.etq-wear .a2{
+    width: 100%;
+    height:110mm;
+    background: url(../images/Shades_Collectie_750x.webp);
+    background-size: cover;
+    background-position: center;
+}
+.footer{
+    width: 96%;
+    padding-bottom: 2vh;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+.footer div div input:focus{
+    outline: none;
+}
+.M-view{
+    display: none;
+}
+.m-favourite{
+    display: none;
+    position: relative;
+}
+.m-favourite .slide{
+    width: 80%;
+    aspect-ratio: 1/1;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.m-favourite .slide .item1{
+    /* background-color: lightblue; */
+    /* height: 95%; */
+    aspect-ratio: 1/2;
+}
+.m-favourite .slide .item2{
+    /* background-color: lightgreen; */
+    /* height: 95%; */
+    aspect-ratio: 2/1;
+}
+.m-favourite .slide .item1, .item2{
+    display: inline-block;
+    margin: 5px;
+    scroll-snap-align: center;
+}
+.m-favourite .slide::-webkit-scrollbar {
+    display: none;
+}
+.m-favourite .slide {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+.m-shades{
+    display: none;
+}
+.flush{
+    display: none;
+}
+/*begining of toggle clases */
+.secound-nav{
+    background-color: white;
+    display: none;
+    position: fixed;
+    top: 15.6vh;
+    left: 1%;
+}
+.third-nav{
+    background-color: white;
+    position:fixed;
+    display: none;
+    top: 15.6vh;
+    left: 1%;
+}
+.third-nav .third-inner{
+    margin-top: 12vh; 
+    padding-bottom: 9vh;
+}
+.fourth-nav{
+    background-color: white;
+    position: fixed;
+    top: 15.6vh;
+    left: 1%;
+    display: none;
+}
+.fifth-nav{
+    background-color: white;
+    display: none;
+    padding-bottom: 8vh;
+    position: fixed;
+    left: 1%;
+    top: 15.6vh;
+}
+.sixth-nav{
+    display: none;
+    padding-bottom: 5vh;
+    position: fixed;
+    right: 1%;
+    top: 5.6vh;
+    background-color: #fff;
+}
+.visibility{
+    display: block;
+}
+
+/* ending of toggle */
+/*begining of media querry */
+@media screen and (max-width: 1023px) {
+    .div1{
+        display: none;
+    }
+    .first-nav{
+        display: none;
+    }
+    .home-div{
+        display: none;
+    }
+    .home-div2{
+        display: block;
+    }
+    .whole-nav{
+        display: none;
+    }
+    .recomadation{
+        display: none;
+    }
+    .favourite{
+        display: none;
+    }
+    .etq-wear{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .M-view{
+        display: block;
+    }
+    .m-favourite{
+        display: block;
+    }
+    .m-shades{
+        display: block;
+    }
+    .flush{
+        display: block;
+    }
+}
